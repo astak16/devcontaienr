@@ -1,0 +1,43 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+	"name": "uccs",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bookworm",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": { "VARIANT": "18-buster-slim" }
+	},
+	"mounts": [
+		{
+			"source": "${localEnv:HOME}/Library/pnpm",
+			"target": "/root/.local/share/pnpm",
+			"type": "bind"
+		}
+		,{
+			"source": "${localEnv:HOME}/.ssh",
+			"target": "/root/.ssh",
+			"type": "bind"
+		}
+	],
+	"workspaceFolder": "/root/uccs",
+	"postCreateCommand": "git clone http://xxx . && pnpm i",
+	"postStartCommand": "pnpm dev",
+	"remoteUser": "root",
+	"customizations": {
+		"vscode": {
+			"settings":"${workspaceFolder}/.vscode/settings.json",
+			"extensions": [
+				"eamodio.gitlens",
+				"donjayamanne.githistory",
+				"naumovs.color-highlight",
+				"streetsidesoftware.code-spell-checker",
+				"styled-components.vscode-styled-components",
+				"esbenp.prettier-vscode",
+				"pranaygp.vscode-css-peek",
+				"formulahendry.auto-rename-tag",
+				"steoates.autoimport"
+			]
+		}
+	}
+}
