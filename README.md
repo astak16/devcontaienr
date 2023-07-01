@@ -210,6 +210,8 @@ ENV SHELL /bin/zsh
 
 ## 最后
 
-本项目地址：https://github.com/astak16/devcontaienr，仅供学习使用，如果用于工作中，请自行配置相关参数
+本项目地址：https://github.com/astak16/devcontaienr
+
+仅供学习使用，如果用于工作中，请自行配置相关参数
 
 欢迎大家提出意见和建议，一起学习，一起进步
