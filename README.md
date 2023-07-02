@@ -148,16 +148,16 @@ ENV SHELL /bin/zsh
 
 `node` 镜像时以 `Debian` 为基础：
 
-1. 稳定版：通常这类镜像都很大，但是功能很全
-   - `buster` —— 最新的 `Debian` 稳定版
-   - `stretch` —— 上一版 `Debian` 稳定版
-   - `jessie` —— 上上版 `Debian` 稳定版
-   - `wheezy` —— 被淘汰的 `Debian` 稳定版
-2. 轻量版：这类镜像很小，只保留了 `node` 的基本运行环境
-   - `slim` —— 基于 `Debian` 的轻量版
-   - `alpine` —— 基于 `Alpine Linux` 的轻量版
-3. 不稳定版本
-   - `bullseye`、`bookworm` —— 正在开发但尚未稳定版本的 `Debian`
+1.  稳定版：通常这类镜像都很大，但是功能很全
+    *   `bookworm`  —— `Debian 12` 稳定版
+    *   `bullseye` —— `Debian 11` 稳定版
+    *   `buster` —— `Debian 10` 稳定版
+    *   `stretch` —— `Debian 9` 稳定版
+    *   `jessie` —— `Debian 8` 稳定版
+    *   `wheezy` —— `Debian7` 稳定版
+2.  轻量版：这类镜像很小，只保留了 `node` 的基本运行环境
+    *   `slim` —— 基于 `Debian` 的轻量版
+    *   `alpine` —— 基于 `Alpine Linux` 的轻量版
 
 官方推荐使用稳定版，如果对内存没要求可以使用，毕竟功能齐全，软件就不用自己装了
 
