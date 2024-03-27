@@ -8,7 +8,7 @@
 ---
 
 
-> 本项目灵感来自于方方老师的[oh-my-docker](https://github.com/FrankFang/oh-my-docker)
+> 本项目灵感来自于[oh-my-docker](https://github.com/FrankFang/oh-my-docker)
 >
 > 我在此基础上进行了魔改，主要学习 `dev containers` 以及 `docker` 的基本使用
 >
